@@ -1,0 +1,109 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Center entire content */
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* App container */
+.container {
+  width: 100%;
+  max-width: 480px;
+  padding: 20px;
+}
+
+/* Input section */
+.task-container {
+  background: #fff;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 18px #b8b5b5;
+  text-align: center;
+}
+
+.task-container h1 {
+  margin-bottom: 20px;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-area input {
+  height: 40px;
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+/* Task list */
+.task-list {
+  width: 90%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  gap: 16px;
+}
+
+/* Task card */
+.task-card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 18px #b8b5b5;
+  word-wrap: break-word;
+}
+
+.task-text {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* Buttons */
+.btn {
+  height: 40px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  background: royalblue;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: darkblue;
+}
+
+.delete-btn {
+  background: crimson;
+}
+
+.delete-btn:hover {
+  background: darkred;
+}
+
+.empty-msg {
+  margin-top: 20px;
+  font-size: 18px;
+  color: gray;
+  text-align: center;
+}
