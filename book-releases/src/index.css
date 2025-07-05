@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f3f3;
+}
+
+.app {
+  padding: 30px 16px;
+  text-align: center;
+}
+
+.app-title {
+  font-size: 34px;
+  margin-bottom: 14px;
+}
+
+.add-form {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 30px auto;
+}
+
+.add-form input {
+  height: 38px;
+  font-size: 15px;
+  padding: 6px 8px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+.add-btn {
+  height: 40px;
+  background: royalblue;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #264ac9;
+}
+.book-list {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin: 0 auto 50px;
+}
+
+.empty {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+}
+.card {
+  border: 1px solid #cacaca;
+  border-radius: 8px;
+  padding: 18px;
+  color: #444;
+  background: #fff;
+  word-wrap: break-word;   /* long titles won't overflow */
+}
+
+.card-title {
+  font-size: 22px;
+  margin-bottom: 6px;
+  color: #000;
+}
+
+.timer {
+  margin-top: 6px;
+  font-weight: 600;
+  color: #0071a6;
+}
+
+.card-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.wish-btn {
+  padding: 6px 12px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  background: #fafafa;
+  cursor: pointer;
+}
+
+.wish-btn:hover {
+  background: #ebebeb;
+}
+
+.badge {
+  background: #e8ffe8;
+  color: #079807;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+}
