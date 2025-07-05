@@ -1,0 +1,83 @@
+/* Reset / globals */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Arial, sans-serif; background:#f1f1f1; min-height:100vh; }
+
+.app { padding: 0 16px 40px; }
+.mode-btn {
+  position: fixed; right: 16px; top: 12px;
+  width: 110px; height: 36px;
+  background: #000; color:#fff; border:none;
+  border-radius:6px; cursor:pointer;
+}
+.loader { text-align:center; margin-top: 30px; font-size:20px; color:#7da6c7; }
+
+/* dark‑mode overrides */
+.dark { background:#000; color:#fff; }
+.dark .movie-card,
+.dark .detail,
+.dark .task-container { background:#1a1a1a; color:#fff; }
+.dark .movie-card { border-color:#444; }
+.dark .detail { border-color:#666; }
+.dark .mode-btn { background:#fff; color:#000; }
+
+.search        { margin-top: 60px; text-align: center; }
+.search-bar    { margin-top: 14px; }
+.search-bar input {
+  width: 320px; max-width: 90%;
+  height: 40px; font-size: 16px;
+  padding: 8px 10px;
+  border: 1px solid #aaa; border-radius: 8px;
+}
+.search-btn {
+  margin-left: 12px;
+  width: 100px; height: 40px;
+  font-size: 16px; color: #fff;
+  background: #4ec4c4; border: none; border-radius: 6px;
+  cursor: pointer;
+}
+.movie-list {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  justify-content: center;
+}
+.no-movies {
+  font-size: 22px; color: #555; text-align: center;
+}
+.movie-card {
+  width: 220px;
+  padding: 10px;
+  border: 1px solid #ccc; border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform .2s;
+  background: #fff;
+}
+.movie-card:hover { transform: translateY(-6px); box-shadow: 0 6px 15px rgba(0,0,0,.12); }
+.movie-title { font-size: 18px; margin: 8px 0; word-wrap: break-word; }
+.movie-year  { font-size: 15px; color: #777; }
+.movie-card img {
+  width: 90%; height: auto; margin-top: 8px;
+  border-radius: 4px;
+}
+.detail {
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 24px;
+  border: 1px solid #ccc; border-radius: 8px;
+  background: #fff;
+  font-size: 17px;
+}
+.detail h2 { text-align: center; margin-bottom: 18px; }
+.detail img {
+  width: 100%; max-height: 420px; object-fit: contain;
+  border-radius: 6px; margin: 20px 0;
+}
+.back-btn {
+  width: 100%; padding: 12px;
+  font-size: 18px; color: #fff;
+  background: #e05555;
+  border: none; border-radius: 8px; cursor: pointer;
+}
+.back-btn:hover { background: #c64444; }
