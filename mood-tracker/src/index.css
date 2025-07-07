@@ -30,6 +30,10 @@ body {
   margin-bottom: 20px;
 }
 
+.mood-history ul{
+   list-style: none;
+   padding: 0;
+}
 .mood-form input,
 .mood-form textarea {
   width: 100%;
